@@ -191,8 +191,8 @@ git clone https://github.com/ac009527/v2board.git
 cd /usr/share/nginx/html/v2board
 echo -e "\033[36m请输入y确认安装： \033[0m"
 sh /usr/share/nginx/html/v2board/init.sh
-git clone https://gitee.com/gz1903/v2board-theme-LuFly.git /usr/share/nginx/html/v2board/public/LuFly
-mv /usr/share/nginx/html/v2board/public/LuFly/* /usr/share/nginx/html/v2board/public/
+# git clone https://gitee.com/gz1903/v2board-theme-LuFly.git /usr/share/nginx/html/v2board/public/LuFly
+# mv /usr/share/nginx/html/v2board/public/LuFly/* /usr/share/nginx/html/v2board/public/
 chmod -R 777 /usr/share/nginx/html/v2board
 # 添加定时任务
 echo "* * * * * root /usr/bin/php /usr/share/nginx/html/v2board/artisan schedule:run >/dev/null 2>/dev/null &" >> /etc/crontab
